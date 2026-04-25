@@ -1,4 +1,4 @@
-**# 🧠 System Architecture — Smart Door Lock (IoT)**
+# 🧠 System Architecture — Smart Door Lock (IoT)
 
 ## 📌 Overview
 
@@ -142,6 +142,6 @@ HTML Response → User
 
 ---
 
-**## 📌 Summary**
+## 📌 Summary
 
 The system demonstrates a **complete IoT pipeline**, combining sensing, processing, communication, and actuation into a single embedded solution. It serves as a strong foundation for building advanced smart home security systems.
