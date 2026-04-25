@@ -48,14 +48,14 @@ This project uses a combination of embedded hardware components to implement a s
 
 ### 🔹 4. Jumper Wires  
 ![Jumper Wires]  
-<img width="585" height="194" alt="image" src="https://github.com/user-attachments/assets/50f949e9-9eb2-4f66-a11a-76923fcd95a4" />
+
 - Male-to-Female
+<img width="585" height="194" alt="image" src="https://github.com/user-attachments/assets/50f949e9-9eb2-4f66-a11a-76923fcd95a4" />
 
-<img width="529" height="211" alt="image" src="https://github.com/user-attachments/assets/452a1cd0-6098-4d2b-82c3-d2091b0a867c" />
 - Female-to-Female
-- Used for electrical connections between components
+<img width="529" height="211" alt="image" src="https://github.com/user-attachments/assets/452a1cd0-6098-4d2b-82c3-d2091b0a867c" />
 
-- 
+- Used for electrical connections between components
 - Ensures proper signal and power transmission  
 - Types:
   - Male-to-Female  
@@ -103,4 +103,4 @@ All hardware images referenced above are stored in the `hardware/` directory of 
 
 ## 📌 Summary
 
-The hardware setup forms the foundation of the system, enabling sensing, processing, communication, and actuation required for a functional smart door lock system. Proper selection and integration of components ensure reliability, efficiency, and scalability of the solution.<img width="387" height="195" alt="Screenshot 2026-04-26 024216" src="https://github.com/user-attachments/assets/80088253-63f9-4bf3-85ca-f7cc0d32f891" />
+The hardware setup forms the foundation of the system, enabling sensing, processing, communication, and actuation required for a functional smart door lock system. Proper selection and integration of components ensure reliability, efficiency, and scalability of the solution.
