@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Door Lock</title>
+
+    <style>
+        /* Basic UI styling for better visualization */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .status {
+            font-size: 1.5rem;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .open {
+            background-color: #28a745;
+        }
+
+        .close {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--
+================================================================================
+IMPORTANT NOTES FOR DEVELOPERS
+
+1. WHY THIS FILE IS ADDED:
+   - This file separates UI (HTML) from backend logic (Python).
+   - Improves code readability and maintainability.
+   - Follows "Separation of Concerns" principle.
+
+2. WHAT TO CHANGE IN main.py:
+
+   You MUST replace the old HTML function with file loading.
+
+   STEP A: ADD THIS FUNCTION in main.py
+
+       def load_html(filename, state):
+           with open(filename, 'r') as file:
+               html = file.read()
+               return html.replace("{state}", state)
+
+   STEP B: FIND THIS LINE in main.py (inside serve function):
+
+       response = webpage(state)
+
+   STEP C: REPLACE IT WITH:
+
+       response = load_html("index.html", state)
+
+3. WHY {state} IS USED:
+   - {state} is a placeholder.
+   - Python replaces it dynamically with "Open" or "Closed".
+
+4. FILE LOCATION:
+   - Place this file in the SAME DIRECTORY as main.py
+   - Otherwise, file will not load.
+
+================================================================================
+-->
+
+<div class="container">
+    <h1>🔐 Smart Door Lock System</h1>
+
+    <!-- Dynamic door status -->
+    <div class="status">
+        Door Status: <strong>{state}</strong>
+    </div>
+
+    <!-- Open Door -->
+    <form action="/DoorOpen">
+        <button class="btn open" type="submit">🚪 Open Door</button>
+    </form>
+
+    <!-- Close Door -->
+    <form action="/DoorClose">
+        <button class="btn close" type="submit">🔒 Close Door</button>
+    </form>
+</div>
+
+</body>
+</html>
