@@ -52,8 +52,7 @@ This section describes how the hardware components are connected in the Smart Do
 
 - Door Open State
 <img width="657" height="726" alt="image" src="https://github.com/user-attachments/assets/fa803aa6-ddd9-4b2c-aa07-2103f6b16055" />
-\n
-
+  <br>
 - Door Closed State
 <img width="662" height="718" alt="image" src="https://github.com/user-attachments/assets/f3ea9c58-53a8-4265-ae21-9d4c45afdc7b" />
   <br>
