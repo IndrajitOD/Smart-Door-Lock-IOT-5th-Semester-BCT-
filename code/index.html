@@ -6,7 +6,6 @@
     <title>Smart Door Lock</title>
 
     <style>
-        /* Basic UI styling for better visualization */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #1f1c2c, #928dab);
@@ -51,39 +50,74 @@
 
 <!--
 ================================================================================
-IMPORTANT NOTES FOR DEVELOPERS
+DEVELOPER NOTE: HTML FILE FOR SMART DOOR LOCK SYSTEM
+================================================================================
 
-1. WHY THIS FILE IS ADDED:
-   - This file separates UI (HTML) from backend logic (Python).
-   - Improves code readability and maintainability.
-   - Follows "Separation of Concerns" principle.
+This HTML file is OPTIONAL and is created for better code organization.
 
-2. WHAT TO CHANGE IN main.py:
+Currently, in the original project:
+- HTML is written inside main.py as a string.
+- Raspberry Pi Pico sends that HTML directly.
 
-   You MUST replace the old HTML function with file loading.
+WHY THIS FILE EXISTS:
+- To separate UI (HTML) from backend logic (Python)
+- To make the project cleaner and more modular
+- To improve readability and maintainability
 
-   STEP A: ADD THIS FUNCTION in main.py
+--------------------------------------------------------------------------------
+IF YOU WANT TO USE THIS HTML FILE (OPTIONAL MODIFICATION)
+--------------------------------------------------------------------------------
 
-       def load_html(filename, state):
-           with open(filename, 'r') as file:
-               html = file.read()
-               return html.replace("{state}", state)
+Your current main.py likely has this function:
 
-   STEP B: FIND THIS LINE in main.py (inside serve function):
+    def webpage(state):
+        return f""" ... HTML CODE ... """
 
-       response = webpage(state)
+And inside serve() function:
 
-   STEP C: REPLACE IT WITH:
+    response = webpage(state)
 
-       response = load_html("index.html", state)
+--------------------------------------------------------------------------------
+TO USE THIS HTML FILE, DO THE FOLLOWING CHANGES IN main.py:
+--------------------------------------------------------------------------------
 
-3. WHY {state} IS USED:
-   - {state} is a placeholder.
-   - Python replaces it dynamically with "Open" or "Closed".
+1️⃣ ADD THIS FUNCTION (place ABOVE serve() function):
 
-4. FILE LOCATION:
-   - Place this file in the SAME DIRECTORY as main.py
-   - Otherwise, file will not load.
+    def load_html(filename, state):
+        with open(filename, 'r') as file:
+            html = file.read()
+            return html.replace("{state}", state)
+
+------------------------------------------------------------
+
+2️⃣ FIND THIS LINE inside serve():
+
+    response = webpage(state)
+
+------------------------------------------------------------
+
+3️⃣ REPLACE IT WITH:
+
+    response = load_html("index.html", state)
+
+------------------------------------------------------------
+
+4️⃣ OPTIONAL (CLEAN CODE):
+
+    You can REMOVE the old webpage() function completely.
+
+------------------------------------------------------------
+
+IMPORTANT NOTES:
+- Place index.html in the SAME folder as main.py
+- "{state}" is dynamically replaced by Python
+- If not replaced, it will show as plain text
+
+--------------------------------------------------------------------------------
+CURRENT STATUS:
+--------------------------------------------------------------------------------
+✔ Your original Python code will still work WITHOUT this file
+✔ This file is only for modular structure and improvement
 
 ================================================================================
 -->
@@ -91,17 +125,14 @@ IMPORTANT NOTES FOR DEVELOPERS
 <div class="container">
     <h1>🔐 Smart Door Lock System</h1>
 
-    <!-- Dynamic door status -->
     <div class="status">
         Door Status: <strong>{state}</strong>
     </div>
 
-    <!-- Open Door -->
     <form action="/DoorOpen">
         <button class="btn open" type="submit">🚪 Open Door</button>
     </form>
 
-    <!-- Close Door -->
     <form action="/DoorClose">
         <button class="btn close" type="submit">🔒 Close Door</button>
     </form>
