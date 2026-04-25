@@ -9,7 +9,7 @@ This project uses a combination of embedded hardware components to implement a s
 ## 🧩 Components List
 
 ### 🔹 1. Raspberry Pi Pico  
-![Raspberry Pi Pico]  <img width="387" height="195" alt="Screenshot 2026-04-26 024216" src="https://github.com/user-attachments/assets/86b4fb2f-ec3b-4688-8095-95ea75583747" />
+  <img width="387" height="195" alt="Screenshot 2026-04-26 024216" src="https://github.com/user-attachments/assets/86b4fb2f-ec3b-4688-8095-95ea75583747" />
 
 - Microcontroller based on RP2040 dual-core ARM Cortex-M0+  
 - Acts as the central processing unit of the system  
@@ -21,7 +21,7 @@ This project uses a combination of embedded hardware components to implement a s
 ---
 
 ### 🔹 2. Micro Servo Motor  
-![Servo Motor]  <img width="390" height="210" alt="image" src="https://github.com/user-attachments/assets/a98bbd02-9ec8-46c1-b85d-933e81eb7136" />
+  <img width="390" height="210" alt="image" src="https://github.com/user-attachments/assets/a98bbd02-9ec8-46c1-b85d-933e81eb7136" />
 
 - Used for physical locking and unlocking mechanism  
 - Controlled using PWM (Pulse Width Modulation) signals  
@@ -35,7 +35,7 @@ This project uses a combination of embedded hardware components to implement a s
 ---
 
 ### 🔹 3. PIR Sensor (Passive Infrared)  
-![PIR Sensor]  <img width="259" height="206" alt="image" src="https://github.com/user-attachments/assets/6f9c4c67-c1da-4242-ae43-5269ec67f511" />
+  <img width="259" height="206" alt="image" src="https://github.com/user-attachments/assets/6f9c4c67-c1da-4242-ae43-5269ec67f511" />
 
 - Detects motion based on infrared radiation emitted by objects  
 - Sends digital HIGH/LOW signal to the microcontroller  
@@ -47,7 +47,6 @@ This project uses a combination of embedded hardware components to implement a s
 ---
 
 ### 🔹 4. Jumper Wires  
-![Jumper Wires]  
 
 - Male-to-Female
 <img width="585" height="194" alt="image" src="https://github.com/user-attachments/assets/50f949e9-9eb2-4f66-a11a-76923fcd95a4" />
@@ -66,7 +65,7 @@ This project uses a combination of embedded hardware components to implement a s
 ---
 
 ### 🔹 5. USB Cable  
-![USB Cable] <img width="233" height="257" alt="image" src="https://github.com/user-attachments/assets/aaafe52e-4108-4b18-b375-e9d7a5eadd46" />
+ <img width="233" height="257" alt="image" src="https://github.com/user-attachments/assets/aaafe52e-4108-4b18-b375-e9d7a5eadd46" />
 
 
 - Used to power the Raspberry Pi Pico  
