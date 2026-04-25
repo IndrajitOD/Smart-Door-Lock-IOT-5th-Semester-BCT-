@@ -20,12 +20,12 @@ This project demonstrates the integration of embedded systems, networking, and a
 
 ## 🚀 Key Features
 
-- Remote door lock/unlock using browser-based interface  
-- Real-time system response with minimal latency  
-- Motion detection using PIR sensor  
-- Embedded web server running on Raspberry Pi Pico  
-- Lightweight and cost-effective implementation  
-- Modular system design for scalability  
+-  🌐 Remote door lock/unlock using browser-based interface  
+-  🔁 Real-time system response with minimal latency  
+-  👁️ Motion detection using PIR sensor  
+-  🖥️ Embedded web server running on Raspberry Pi Pico  
+-  ⚡ Lightweight and cost-effective implementation  
+-  🧠 Modular system design for scalability  
 
 ---
 
@@ -56,6 +56,14 @@ The microcontroller processes these commands and controls a servo motor that phy
 - Thonny IDE  
 - Socket Programming (for web server)  
 - HTML (for user interface)  
+
+---
+
+## ▶️ Entry Point
+
+-- The main program file is located at:
+
+code/main.py
 
 ---
 
@@ -114,21 +122,24 @@ The system follows a layered architecture:
 ---
 
 ## 📁 Project Structure
-smart-door-lock-iot/
+smart-door-lock-iot-5th-Semester -BCT-/
 │
 ├── code/ # MicroPython source code
+| ├── index.html # Optional UI separation
+| └── main.py # Main program
+|
 ├── docs/ # Documentation files
 │ ├── architecture.md
+| ├── project-report.pdf
 │ ├── working.md
 │ └── setup-guide.md
 │
 ├── hardware/ # Hardware documentation
 │ ├── components.md
 │ └── connections.md
-│
-├── index.html # Optional UI separation
-├── main.py # Main program
-└── README.md
+|
+├── README.md
+└── screenhshots.md
 
 ---
 
