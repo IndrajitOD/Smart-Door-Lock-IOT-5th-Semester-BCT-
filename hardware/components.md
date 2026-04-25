@@ -81,7 +81,7 @@ This project uses a combination of embedded hardware components to implement a s
 
 - Glue and Scissors
  <img width="109" height="301" alt="image" src="https://github.com/user-attachments/assets/2240765c-0d7e-4d82-9eff-d0540722b200" />
-<img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/369c8118-0ce5-4c58-990c-13991acf28f7" /> Before using scissors, read all instructions and ensure the blades are sharp and undamaged, as dull or broken scissors require excessive force and may slip
+<img width="11" height="11" alt="image" src="https://github.com/user-attachments/assets/369c8118-0ce5-4c58-990c-13991acf28f7" />Before using scissors, read all instructions and ensure the blades are sharp and undamaged, as dull or broken scissors require excessive force and may slip
 ---
 
 ## ⚙️ Power Considerations
