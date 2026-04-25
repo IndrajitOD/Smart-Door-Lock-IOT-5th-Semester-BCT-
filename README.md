@@ -1,61 +1,209 @@
-# 🔐 Smart Door Lock System (IoT)
+# 🔐 Smart Door Lock System using Raspberry Pi Pico (IoT)
 
-An IoT-based smart door lock system built using Raspberry Pi Pico that allows users to remotely control and monitor door access using a web interface.
+## 📌 Project Overview
+
+The Smart Door Lock System is an Internet of Things (IoT)-based embedded solution designed to provide secure and remote-controlled access to a door locking mechanism. The system leverages a Raspberry Pi Pico microcontroller, along with sensors and actuators, to enable real-time monitoring and control via a web interface.
+
+This project demonstrates the integration of embedded systems, networking, and automation to build a functional smart security system suitable for home and small-scale applications.
 
 ---
 
-## 🚀 Features
+## 🎯 Objectives
 
-- Remote door lock/unlock via web interface  
+- To design and implement a smart door locking mechanism  
+- To enable remote access control using a web-based interface  
+- To integrate motion detection for enhanced security  
+- To develop a lightweight IoT system using MicroPython  
+- To demonstrate real-time interaction between hardware and software  
+
+---
+
+## 🚀 Key Features
+
+- Remote door lock/unlock using browser-based interface  
+- Real-time system response with minimal latency  
 - Motion detection using PIR sensor  
-- Real-time control using WiFi  
-- Servo-based locking mechanism  
+- Embedded web server running on Raspberry Pi Pico  
+- Lightweight and cost-effective implementation  
+- Modular system design for scalability  
 
 ---
 
-## 🧠 How It Works
+## 🧠 System Description
 
-- PIR sensor detects motion  
-- Raspberry Pi Pico processes input  
-- Web server allows user interaction  
-- Servo motor controls door lock  
+The system operates by hosting a local web server on the Raspberry Pi Pico. When a user accesses the device’s IP address through a browser, a control interface is displayed. The user can send commands to open or close the door.
+
+The microcontroller processes these commands and controls a servo motor that physically locks or unlocks the door. Additionally, a PIR sensor continuously monitors motion near the door, enabling basic security awareness.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧩 System Components
 
-- Raspberry Pi Pico  
+### Hardware Components
+
+- Raspberry Pi Pico (RP2040 microcontroller)  
+- Micro Servo Motor (for locking mechanism)  
+- PIR Sensor (motion detection)  
+- Jumper Wires (connections)  
+- USB Cable (power and programming)  
+- Cardboard structure (for physical prototype)  
+
+---
+
+### Software Components
+
 - MicroPython  
-- Socket Programming  
-- PIR Sensor  
-- Servo Motor  
+- Thonny IDE  
+- Socket Programming (for web server)  
+- HTML (for user interface)  
 
 ---
 
-## 📸 Output
+## ⚙️ System Architecture (High-Level)
 
-(Add screenshots here)
+The system follows a layered architecture:
+
+1. **Input Layer**
+   - PIR sensor detects motion  
+
+2. **Processing Layer**
+   - Raspberry Pi Pico processes inputs and requests  
+
+3. **Communication Layer**
+   - WiFi + socket server handles HTTP requests  
+
+4. **Output Layer**
+   - Servo motor performs locking/unlocking  
+
+5. **Presentation Layer**
+   - Web interface displayed in browser  
 
 ---
 
-## ⚙️ Setup
+## 🔄 Working Principle
 
-1. Install Thonny IDE  
-2. Select MicroPython (Raspberry Pi Pico)  
-3. Upload code  
-4. Connect to WiFi  
-5. Open IP in browser  
+1. The Raspberry Pi Pico initializes and connects to WiFi  
+2. A socket-based web server is started  
+3. The user accesses the system via IP address  
+4. The web interface provides control options  
+5. User actions generate HTTP requests:
+   - `/DoorOpen` → Unlock door  
+   - `/DoorClose` → Lock door  
+6. The Pico processes the request  
+7. The servo motor rotates accordingly  
+8. PIR sensor continuously monitors motion  
+9. System updates and responds in real time  
+
+---
+
+## 🔌 Hardware Connections (Summary)
+
+### Servo Motor
+- Signal → GP5  
+- VCC → 5V / 3.3V  
+- GND → GND  
+
+### PIR Sensor
+- VCC → 3.3V  
+- GND → GND  
+- OUT → GP6  
+
+### Power Supply
+- Powered via USB cable  
+
+---
+
+## 📁 Project Structure
+smart-door-lock-iot/
+│
+├── code/ # MicroPython source code
+├── docs/ # Documentation files
+│ ├── architecture.md
+│ ├── working.md
+│ └── setup-guide.md
+│
+├── hardware/ # Hardware documentation
+│ ├── components.md
+│ └── connections.md
+│
+├── index.html # Optional UI separation
+├── main.py # Main program
+└── README.md
+
+---
+
+## ⚙️ Setup Instructions
+
+Detailed setup instructions are available in:
+
+👉 `docs/setup-guide.md`
+
+---
+
+## 📚 Documentation
+
+- Architecture → `docs/architecture.md`  
+- Working Principle → `docs/working.md`  
+- Setup Guide → `docs/setup-guide.md`  
+
+---
+
+## 🔐 Security Considerations
+
+- The current system operates on a local network  
+- No authentication mechanism is implemented  
+- Data transmission is not encrypted  
+
+Future improvements can include:
+- Password-based access  
+- OTP authentication  
+- Secure communication protocols  
+
+---
+
+## ⚠️ Limitations
+
+- Limited to local network access  
+- No user authentication system  
+- Single-threaded request handling  
+- Dependent on WiFi availability  
 
 ---
 
 ## 🔮 Future Scope
 
-- Biometric authentication  
-- Cloud integration  
-- AI-based detection  
+- Integration with cloud platforms  
+- Mobile application control  
+- Biometric authentication (fingerprint/face recognition)  
+- AI-based intrusion detection  
+- Multi-user access management  
+- Real-time notification system  
+
+---
+
+## 🧪 Testing & Validation
+
+The system was tested for:
+- Web interface accessibility  
+- Servo motor response accuracy  
+- PIR sensor motion detection  
+- Real-time command execution  
+
+---
+
+## 📌 Conclusion
+
+The Smart Door Lock System demonstrates the effective integration of IoT, embedded systems, and automation. It provides a practical and scalable solution for smart access control and highlights the potential for future enhancements in security and user experience.
 
 ---
 
 ## 👨‍💻 Author
 
-Indrajit Bhowmick
+**Indrajit Bhowmick**  
+B.Tech (Electronics and Communication Engineering)
+
+---
+
+## ⭐ Repository Support
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
