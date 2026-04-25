@@ -75,6 +75,15 @@ This project uses a combination of embedded hardware components to implement a s
 
 ---
 
+### 🔹 6. Physical Structure
+- Cardboard for the outer frame
+ <img width="328" height="332" alt="image" src="https://github.com/user-attachments/assets/e5494db6-f062-41d6-9d77-3d5b81851567" />
+
+- Glue and Scissors
+ <img width="109" height="301" alt="image" src="https://github.com/user-attachments/assets/2240765c-0d7e-4d82-9eff-d0540722b200" />
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/369c8118-0ce5-4c58-990c-13991acf28f7" /> Before using scissors, read all instructions and ensure the blades are sharp and undamaged, as dull or broken scissors require excessive force and may slip
+---
+
 ## ⚙️ Power Considerations
 
 - Ensure stable and sufficient power supply for the servo motor  
