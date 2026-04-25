@@ -1,5 +1,6 @@
 # 📸 Project Screenshots — Smart Door Lock System
 
+
 ## 🌐 Web Interface
 
   <img width="645" height="171" alt="image" src="https://github.com/user-attachments/assets/5d2a8e62-451b-4764-ab16-682e7121e7dd" />
