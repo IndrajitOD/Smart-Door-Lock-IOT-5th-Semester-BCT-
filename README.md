@@ -123,19 +123,19 @@ The system follows a layered architecture:
 Smart-Door-Lock-IOT-5th-Semester-BCT-/ <br>
 │ <br>
 ├── code/ # MicroPython source code <br>
-| ├── index.html # Optional UI separation <br>
-| └── main.py # Main program <br>
-| <br>
+│      ├── index.html # Optional UI separation <br>
+│      └── main.py # Main program <br>
+│ <br>
 ├── docs/ # Documentation files <br>
-│ ├── architecture.md <br>
-| ├── project-report.pdf <br>
-│ ├── working.md <br>
-│ └── setup-guide.md <br>
+│      ├── architecture.md <br>
+│      ├── project-report.pdf <br>
+│      ├── working.md <br>
+│      └── setup-guide.md <br>
 │ <br>
 ├── hardware/ # Hardware documentation <br>
-│ ├── components.md <br>
-│ └── connections.md <br>
-| <br>
+│      ├── components.md <br>
+│      └── connections.md <br>
+│ <br>
 ├── README.md <br>
 └── screenhshots.md <br>
 
