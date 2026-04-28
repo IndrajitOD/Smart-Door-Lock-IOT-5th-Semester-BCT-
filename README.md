@@ -124,7 +124,7 @@ The system follows a layered architecture:
 ## 📁 Project Structure
 smart-door-lock-iot-5th-Semester -BCT-/
 │
-├── code/ # MicroPython source code
+├── code/ # MicroPython source code <br>
 | ├── index.html # Optional UI separation
 | └── main.py # Main program
 |
