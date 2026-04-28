@@ -61,9 +61,7 @@ The microcontroller processes these commands and controls a servo motor that phy
 
 ## ▶️ Entry Point
 
--- The main program file is located at:
-
-code/main.py
+- The main program file is located at : <span style="color: green;"> code/main.py </span>
 
 ---
 
@@ -121,25 +119,25 @@ The system follows a layered architecture:
 
 ---
 
-## 📁 Project Structure
-smart-door-lock-iot-5th-Semester -BCT-/
-│
+## 📁 Project Structure 
+Smart-Door-Lock-IOT-5th-Semester-BCT-/ <br>
+│ <br>
 ├── code/ # MicroPython source code <br>
-| ├── index.html # Optional UI separation
-| └── main.py # Main program
-|
-├── docs/ # Documentation files
-│ ├── architecture.md
-| ├── project-report.pdf
-│ ├── working.md
-│ └── setup-guide.md
-│
-├── hardware/ # Hardware documentation
-│ ├── components.md
-│ └── connections.md
-|
-├── README.md
-└── screenhshots.md
+| ├── index.html # Optional UI separation <br>
+| └── main.py # Main program <br>
+| <br>
+├── docs/ # Documentation files <br>
+│ ├── architecture.md <br>
+| ├── project-report.pdf <br>
+│ ├── working.md <br>
+│ └── setup-guide.md <br>
+│ <br>
+├── hardware/ # Hardware documentation <br>
+│ ├── components.md <br>
+│ └── connections.md <br>
+| <br>
+├── README.md <br>
+└── screenhshots.md <br>
 
 ---
 
