@@ -122,6 +122,8 @@ The system follows a layered architecture:
 ## 📁 Project Structure 
 Smart-Door-Lock-IOT-5th-Semester-BCT-/ <br>
 │ <br>
+├── certificates/ <br>
+│      └── iot-training-certificate.pdf <br>
 ├── code/ # MicroPython source code <br>
 │      ├── index.html # Optional UI separation <br>
 │      └── main.py # Main program <br>
@@ -187,6 +189,15 @@ Future improvements can include:
 - AI-based intrusion detection  
 - Multi-user access management  
 - Real-time notification system  
+
+---
+
+## 📜 Certification
+
+- This project was developed as part of a 30-hour IoT training program conducted by Ardent Computech Pvt. Ltd.
+- The training focused on embedded systems, sensor integration, and real-time IoT applications.
+
+🔗 View Certificate: [IoT Training Certificate](certificates/iot-training-certificate.pdf)
 
 ---
 
