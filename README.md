@@ -124,6 +124,7 @@ Smart-Door-Lock-IOT-5th-Semester-BCT-/ <br>
 │ <br>
 ├── certificates/ <br>
 │      └── iot-training-certificate.pdf <br>
+│    
 ├── code/ # MicroPython source code <br>
 │      ├── index.html # Optional UI separation <br>
 │      └── main.py # Main program <br>
